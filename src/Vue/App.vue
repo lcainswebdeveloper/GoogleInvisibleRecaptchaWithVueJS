@@ -13,7 +13,7 @@
 			<form-field :form="form" label="MESSAGE" field="message"></form-field>
 			<div class="col-sm-12">
 				<p v-if="form.formSubmitting">Sending Enquiry...</p>
-				<recaptcha-button v-on:recaptcha-loaded="recaptchaLoaded = true" v-on:token-received="successToken" v-if="!form.formSubmitting" ></recaptcha-button>
+				<recaptcha-button :reload="reloadRecaptcha" v-on:recaptcha-loaded="recaptchaLoaded = true" v-on:token-received="successToken" v-if="!form.formSubmitting" ></recaptcha-button>
 			</div>
 		</form>
 	</div>
@@ -25,7 +25,7 @@
     export default {
         name: "App",
         components: {
-            FormField
+            FormField,RecaptchaButton
         },
         methods: {
         	onSubmit() {
@@ -46,6 +46,7 @@
             return {
                 sentSuccessfully: false,
                 recaptchaLoaded: false,
+                reloadRecaptcha:false,
                 form: new Form({
                     name: '',
                     email: '',
@@ -54,10 +55,8 @@
                     formSubmitting: false,
                     response: false,
                     onSuccess(data) {
-                        self.sentSuccessfully = true;
-                    },
-                    onError() {
-                        self.initReCaptcha();
+                    	self.sentSuccessfully = true;
+                        alert(data.data.message);
                     }
                 }),
             }

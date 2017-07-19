@@ -7,7 +7,7 @@
 	</button>
 </template>
 <script>
-	module exports{
+	export default{
 		name:"RecaptchaButton",
 		mounted() {
             this.initReCaptcha();

@@ -40,6 +40,5 @@ module.exports = class {
     onFail(error) {
         this.formSubmitting = false;
         this.errors.record(error.response.data);
-        this.onError();
     }
 }
