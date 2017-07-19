@@ -1,0 +1,19 @@
+{
+    "name": "lewiscains/vuerecaptcha",
+    "authors": [
+        {
+            "name": "Lewis Cains",
+            "email": "lewis@lcainswebdeveloper.co.uk"
+        }
+    ],
+    
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+
+    "autoload": {
+    	"psr-4": {
+            "Classes\\": "Classes/"
+        }
+    }
+}
