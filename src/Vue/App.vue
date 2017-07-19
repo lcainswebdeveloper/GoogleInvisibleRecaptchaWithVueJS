@@ -16,7 +16,7 @@
 				<recaptcha-button :reload="reloadRecaptcha" v-on:recaptcha-loaded="recaptchaLoaded = true" v-on:token-received="successToken" v-if="!form.formSubmitting" ></recaptcha-button>
 			</div>
 		</form>
-	</div>
+	</div> 
 </template>
 <script>
     var Form = require('./Form');
