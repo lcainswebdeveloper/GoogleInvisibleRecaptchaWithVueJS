@@ -5,8 +5,9 @@ namespace Classes;
 class Form
 {
     protected $errors = [];
-    public $name;
-    public $email;
+    protected $name;
+    protected $email;
+    protected $message;
 
     public function __construct($inputs)
     {
