@@ -1,5 +1,5 @@
 # GoogleInvisibleRecaptchaWithVueJS
-Integrating VueJS with Google's Invisible Recaptcha. This repo demonstrates how I work with these technologies both on the client and server side. Credit to Jeffrey Way and Laracasts for providing the foundations of the 'Form.js' and 'Error.js' classes. These provide a really nice way to do validation and handle form inputs using Vue so I've added that in as well. Hopefully there are bits in there which you may find useful.
+Integrating VueJS with Google's Invisible Recaptcha. This repo demonstrates how I work with these technologies both on the client and server side. Credit to Jeffrey Way and Laracasts for providing the foundations of the 'Form.js' and 'Errors.js' classes. These provide a really nice way to do validation and handle form inputs using Vue so I've added that in as well. Hopefully there are bits in there which you may find useful.
 
 ## Please follow these steps once you have cloned the repo:
 - run npm install or 'yarn' to add the node modules needed
